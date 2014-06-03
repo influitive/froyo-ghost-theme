@@ -218,7 +218,9 @@ h5 {
 }
 
 h6 {
-    font-size: 2rem;
+    font-size: 1.4rem; // author name should be smaller
+    background: rgba(238, 238, 238, 0.29); // slight hightlighting
+    padding: 10px;
 }
 
 a {
@@ -555,7 +557,7 @@ h1.blog-title {
     bottom: 0;
     width: 100%;
 	background: rgb(247,97,97);
-    background-color: rgba(247,97,97,0.85);
+    background-color: rgba(81, 152, 207, 0.85); // use influitive colours
     z-index: 100;
     text-align: center;
 }
@@ -727,6 +729,7 @@ main {
 }
 
 .post-author {
+    display: none; // until ghost gets authors do not display.
     padding: 35px 0 25px;
     background-color: #f8f8f8;
     border-top: solid 1px #eaeaea;
@@ -978,7 +981,7 @@ main {
 
 
     h1, h2 {
-		font-size: 30px;	
+		font-size: 30px;
         font-size: 3rem;
         line-height: 1.1em;
         letter-spacing: -1px;
@@ -1068,6 +1071,11 @@ main {
 
     .poweredby {
         margin-top: 10px;
+        color: rgb(76, 126, 170); // more subtle attributions
+
+        a {
+            color: rgb(76, 126, 170); // more subtle attributions
+        }
     }
 
     .post-share {
