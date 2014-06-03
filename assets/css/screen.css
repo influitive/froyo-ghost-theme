@@ -218,8 +218,8 @@ h5 {
 }
 
 h6 {
-    font-size: 1.4rem; // author name should be smaller
-    background: rgba(238, 238, 238, 0.29); // slight hightlighting
+    font-size: 1.4rem; /* author name should be smaller */
+    background: rgba(238, 238, 238, 0.29); /* slight hightlighting */
     padding: 10px;
 }
 
@@ -544,12 +544,32 @@ h1.blog-title {
     font-weight: 700;
     letter-spacing: 0.4px;
     margin-bottom: 5px;
+
+    /* title needs a background so the text is readable on the image */
+    position: relative;
+    background-color: rgba(255,255,255, 0.65);
+    padding: 5px;
+    color: rgb(16, 68, 124);
+    height: 80px;
 }
 
 .blog-description {
-	font-size: 19px;
+    font-size: 19px;
     font-size: 1.9rem;
     letter-spacing: 0.2px;
+
+    /* description should be moved up and part of the title */
+    position: absolute;
+    top: 197px;
+    color: black;
+    font-weight: 800;
+    width: 100%;
+    left: 0;
+}
+
+.post-template .blog-description {
+    /* image is smaller so the text must go up */
+    top: 117px;
 }
 
 .main-nav {
@@ -557,7 +577,7 @@ h1.blog-title {
     bottom: 0;
     width: 100%;
 	background: rgb(247,97,97);
-    background-color: rgba(81, 152, 207, 0.85); // use influitive colours
+    background-color: rgba(81, 152, 207, 0.85); /* use influitive colours */
     z-index: 100;
     text-align: center;
 }
@@ -573,7 +593,7 @@ h1.blog-title {
 .main-nav ul {
     padding: 0;
     margin: 0;
-    /*margin-right: 4%;*/
+    /* margin-right: 4%; */
     display: inline-block;
 }
 
@@ -729,7 +749,7 @@ main {
 }
 
 .post-author {
-    display: none; // until ghost gets authors do not display.
+    display: none; /* until ghost gets authors do not display. */
     padding: 35px 0 25px;
     background-color: #f8f8f8;
     border-top: solid 1px #eaeaea;
@@ -1069,13 +1089,13 @@ main {
         line-height: 1.5em;
     }
 
-    .poweredby {
+    .site-footer .poweredby {
         margin-top: 10px;
-        color: rgb(76, 126, 170); // more subtle attributions
+        color: rgb(76, 126, 170); /* more subtle attributions */
+    }
 
-        a {
-            color: rgb(76, 126, 170); // more subtle attributions
-        }
+    .site-footer .poweredby a {
+        color: rgb(76, 126, 170); /* more subtle attributions */
     }
 
     .post-share {
