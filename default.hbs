@@ -55,5 +55,16 @@
     <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
     <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 
+
+    <script type="text/javascript">
+        $('#rss-link').click(function() {
+          ga('send', 'event', 'link', 'click', 'rss');
+        });
+
+        $('#open-source-link').click(function() {
+          ga('send', 'event', 'link', 'click', 'open source');
+        });    
+    </script>
+
 </body>
 </html>
